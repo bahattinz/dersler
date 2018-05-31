@@ -1,0 +1,14 @@
+LXML:
+http://lxml.de/3.8/parsing.html
+
+Jinja2:
+http://jinja.pocoo.org/docs/2.10/
+
+Xml Serializer
+https://pypi.org/project/xml_marshaller/
+
+Webbrowser:
+https://docs.python.org/2/library/webbrowser.html
+
+Python e-kitap:
+https://belgeler.yazbel.com/python-istihza.pdf
