@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{{title}}</title>
+  </head>
+  <body>
+    <h1>KİTAPLAR</h1>
+    <table>
+      <thead>
+        <th>BAŞLIK</th>
+        <th>YAZAR</th>
+        <th>BASKI YILI</th>
+        <th>OZET</th>
+      </thead>
+      <tbody>
+        {% for kitap in kitaplar %}
+          <tr>
+            <td>{{kitap.baslik}}</td>
+            <td>{{kitap.yazar}}</td>
+            <td>{{kitap.basim_yili}}</td>
+            <td>{{kitap.ozet}}</td>
+          </tr>
+        {%endfor%}
+      </tbody>
+    </table>
+  </body>
+</html>
