@@ -55,6 +55,16 @@ class XmlIslemleri():
             f.write(data)
         print("--->XML verisi kaydedildi.")
 
+    def get_data(self):
+        '''
+        DESERIALIZATION
+        '''
+        f = open(os.path.join(CURRENT_FOLDER,"data.xml"),"r",encoding='utf-8')
+        xml_str = f.read().encode("utf-8")
+
+        data = objectify.fromstring(xml_str)
+        print(data.Kitap.yazar)
+
 class HtmlIslemleri():
     def render_html(self,template,data):
         env = Environment(loader=FileSystemLoader(CURRENT_FOLDER))
